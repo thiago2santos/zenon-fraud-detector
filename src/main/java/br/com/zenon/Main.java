@@ -19,5 +19,10 @@ public class Main {
         logger.info(transaction1.toString());
         logger.info(transaction2.toString());
 
+
+
+        TransactionIngestor transactionIngestor = new TransactionIngestor();
+        transactionIngestor.ingest("data\\PS_20174392719_1491204439457_log.csv");
+
     }
 }
