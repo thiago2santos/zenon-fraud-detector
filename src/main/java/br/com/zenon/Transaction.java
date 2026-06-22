@@ -1,15 +1,15 @@
 package br.com.zenon;
 
 public record Transaction(
-    int step,
+    Integer step,
     TransactionType type,
-    double amount,
+    Float amount,
     String nameOrig,
-    double oldbalanceOrg,
-    double newbalanceOrig,
+    Float oldbalanceOrg,
+    Float newbalanceOrig,
     String nameDest,
-    double oldbalanceDest,
-    double newbalanceDest,
-    int isFraud,
-    int isFlaggedFraud
+    Float oldbalanceDest,
+    Float newbalanceDest,
+    Integer isFraud,
+    Integer isFlaggedFraud
 ) {}
